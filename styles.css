@@ -1,0 +1,129 @@
+body {
+  background: linear-gradient(120deg, #f0e6ff 0%, #ffe6e6 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  background: #fff;
+  max-width: 700px;
+  margin: 40px auto 0 auto;
+  padding: 32px 40px 32px 40px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+h1 {
+  color: #7b1fa2;
+  text-align: center;
+  margin-bottom: 16px;
+  font-size: 2.5em;
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: #1976d2;
+  margin-top: 32px;
+  margin-bottom: 10px;
+  border-left: 5px solid #b39ddb;
+  padding-left: 10px;
+  font-size: 1.5em;
+}
+
+h3 {
+  color: darkred; /* Make all subheadings dark red */
+  margin-top: 24px; /* Add space above subheadings */
+  font-size: 1.7em; /* Third largest */
+}
+
+h4 {
+  color: darkred; /* Make all subheadings dark red */
+  margin-top: 24px; /* Add space above subheadings */
+  font-size: 1.4em; /* Fourth largest */
+}
+
+h5 {
+  color: darkred; /* Make all subheadings dark red */
+  margin-top: 24px; /* Add space above subheadings */
+  font-size: 1.2em; /* Fifth largest */
+}
+
+h6 {
+  color: darkred; /* Make all subheadings dark red */
+  margin-top: 24px; /* Add space above subheadings */
+  font-size: 1em; /* Smallest heading */
+}
+
+ul {
+  padding-left: 24px;
+  margin-bottom: 18px;
+}
+
+li {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* Add a nice hover effect for list items */
+ul li:hover {
+  color: #7b1fa2;
+  background: #f3e5f5;
+  border-radius: 6px;
+  transition: 0.2s;
+  padding-left: 6px;
+}
+
+/* Contact section styling */
+h2:last-of-type {
+  color: #388e3c;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .container {
+    padding: 16px 6px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+}
+
+p {
+  color: #444;
+  font-size: 1.15em;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+.mahesh {
+  color: #fff;
+  background: #1976d2;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(25,118,210,0.15);
+}
+
+.prakash {
+  color: #fff;
+  background: #b71c1c;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(183,28,28,0.15);
+}
+
+.anushka {
+  color: #fff;
+  background: #43a047;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 8px rgba(67,160,71,0.15);
+}
