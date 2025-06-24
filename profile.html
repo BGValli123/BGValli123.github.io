@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gayathri Valli Burugula - Profile</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+    body {
+      background: linear-gradient(135deg, #f8fafc 0%, #e0c3fc 50%, #8ec5fc 100%);
+      font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      color: #222;
+    }
+    .container {
+      background: rgba(255,255,255,0.95);
+      max-width: 750px;
+      margin: 48px auto 0 auto;
+      padding: 40px 48px 40px 48px;
+      border-radius: 24px;
+      box-shadow: 0 8px 32px rgba(80,80,160,0.15);
+      position: relative;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+    }
+    .container:hover {
+      box-shadow: 0 16px 48px rgba(80,80,160,0.22);
+    }
+    h1 {
+      color: #fff;
+      text-align: center;
+      margin-bottom: 18px;
+      font-size: 2.9em;
+      letter-spacing: 2.5px;
+      font-family: 'Pacifico', cursive, 'Poppins', 'Segoe UI', Arial, sans-serif;
+      font-weight: 400;
+      background: linear-gradient(90deg, #43cea2 0%, #185a9d 50%, #8f5cff 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border: none;
+      display: block;
+      padding: 24px 0 12px 0;
+      border-radius: 0 0 32px 32px;
+      margin-top: 0;
+      box-shadow: 0 8px 32px #43cea244;
+      letter-spacing: 4px;
+      text-transform: capitalize;
+      text-shadow: 0 2px 12px #8f5cff33;
+      transition: text-shadow 0.3s, background 0.3s;
+    }
+    h1:hover {
+      text-shadow: 0 6px 32px #8f5cff99, 0 1px 0 #43cea2;
+      background: linear-gradient(90deg, #8f5cff 0%, #185a9d 50%, #43cea2 100%);
+    }
+    h2 {
+      margin-top: 36px;
+      margin-bottom: 12px;
+      border-left: 6px solid #43cea2;
+      padding-left: 12px;
+      font-size: 1.6em;
+      font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+      font-weight: 600;
+    }
+    h2:nth-of-type(1) { /* About Me */
+      color: #ff5e62;
+      background: linear-gradient(90deg, #ff5e62 0%, #ff9966 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-left-color: #ff5e62;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    }
+    h2:nth-of-type(2) { /* Education */
+      color: #00bcd4;
+      background: linear-gradient(90deg, #00bcd4 0%, #3f51b5 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-left-color: #00bcd4;
+    }
+    h2:nth-of-type(3) { /* Skills & Projects */
+      color: #4caf50;
+      background: linear-gradient(90deg, #4caf50 0%, #8bc34a 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-left-color: #4caf50;
+    }
+    h2:nth-of-type(4) { /* Experience & Certifications */
+      color: #e91e63;
+      background: linear-gradient(90deg, #e91e63 0%, #9c27b0 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-left-color: #e91e63;
+    }
+    h2:nth-of-type(5) { /* Interests */
+      color: #3f51b5;
+      background: linear-gradient(90deg, #3f51b5 0%, #00bcd4 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-left-color: #3f51b5;
+    }
+    h2:last-of-type { /* Contact */
+      color: #388e3c;
+      background: linear-gradient(90deg, #388e3c 0%, #cddc39 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border-left-color: #388e3c;
+    }
+    ul {
+      padding-left: 28px;
+      margin-bottom: 20px;
+    }
+    li {
+      font-size: 1.13em;
+      margin-bottom: 7px;
+      color: #333;
+      font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    }
+    p {
+      color: #333;
+      font-size: 1.18em;
+      line-height: 1.8;
+      margin-bottom: 16px;
+      font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+    }
+    ul li:hover {
+      color: #6a11cb;
+      background: #f3e5f5;
+      border-radius: 7px;
+      transition: 0.2s;
+      padding-left: 8px;
+    }
+    a {
+      color: #2575fc;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #6a11cb;
+      text-decoration: underline;
+    }
+    /* Scroll to Top Button Styles */
+    #scrollTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 32px;
+      right: 32px;
+      z-index: 99;
+      background: linear-gradient(90deg, #43cea2 0%, #185a9d 50%, #8f5cff 100%);
+      color: #fff;
+      border: none;
+      outline: none;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      box-shadow: 0 4px 16px #8f5cff44;
+      cursor: pointer;
+      font-size: 2em;
+      transition: background 0.3s, box-shadow 0.3s;
+    }
+    #scrollTopBtn:hover {
+      background: linear-gradient(90deg, #8f5cff 0%, #185a9d 50%, #43cea2 100%);
+      box-shadow: 0 8px 32px #43cea288;
+    }
+    /* Add dark mode styles */
+    body.dark-mode {
+      background: linear-gradient(135deg, #232526 0%, #414345 100%);
+      color: #f3f3f3;
+    }
+    body.dark-mode .container {
+      background: rgba(30,32,34,0.97);
+      box-shadow: 0 8px 32px rgba(20,20,40,0.25);
+    }
+    body.dark-mode h1 {
+      background: linear-gradient(90deg, #fff 0%, #43cea2 50%, #8f5cff 100%);
+      -webkit-text-fill-color: #fff;
+      color: #fff;
+      text-shadow: 0 4px 24px #000c, 0 1px 0 #fff8;
+    }
+    body.dark-mode h2 {
+      color: #b2fffd;
+      border-left-color: #43cea2;
+      text-shadow: 0 2px 12px #000c;
+    }
+    body.dark-mode p,
+    body.dark-mode .container p,
+    body.dark-mode ul li {
+      color: #f3f3f3;
+      text-shadow: 0 1px 8px #000a;
+    }
+    body.dark-mode img {
+      border-color: #232526;
+    }
+    body.dark-mode ul li {
+      color: #e0e0e0;
+      background: none;
+    }
+    body.dark-mode ul li:hover {
+      color: #43cea2;
+      background: #232526;
+    }
+    body.dark-mode a {
+      color: #8f5cff;
+    }
+    body.dark-mode a:hover {
+      color: #43cea2;
+    }
+    body.dark-mode #scrollTopBtn {
+      background: linear-gradient(90deg, #232526 0%, #414345 100%);
+      color: #fff;
+    }
+    body.dark-mode #scrollTopBtn:hover {
+      background: linear-gradient(90deg, #43cea2 0%, #8f5cff 100%);
+    }
+    @media (max-width: 700px) {
+      .container {
+        padding: 18px 4px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      h2 {
+        font-size: 1.1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Gayathri Valli Burugula</h1>
+    <h2>About Me</h2>
+    <img src="me.jpg" alt="Gayathri Valli Burugula" style="display:block; margin:40px auto 32px auto; width:180px; height:180px; object-fit:cover; border-radius:50%; box-shadow:0 2px 12px rgba(0,0,0,0.12); border: 6px solid #fff; object-position: center top;">
+    <p>Hello! My name is Gayathri Valli Burugula. I am a student currently studying B.Tech, having completed my 2nd year at Sir C R Reddy College of Engineering, Eluru. My branch is Computer Science and Engineering (Artificial Intelligence & Data Science). I am passionate about web development and enjoy creating beautiful and functional web pages.</p>
+    <div style="display:flex; justify-content:center; gap:24px; margin-bottom:24px;">
+      <a href="https://www.linkedin.com/in/BURUGULA-GAYATHRI-VALLI" target="_blank" title="LinkedIn" style="text-decoration:none;"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width:32px;height:32px;vertical-align:middle;"> LinkedIn</a>
+      <a href="https://github.com/BGValli123" target="_blank" title="GitHub" style="text-decoration:none;"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" style="width:32px;height:32px;vertical-align:middle;"> GitHub</a>
+    </div>
+    <h2>Education</h2>
+    <ul>
+      <li>Sir C R Reddy College of Engineering, Eluru (B.Tech, CSE - AI&DS, 2nd year completed)</li>
+      <li>NRI College, Eluru</li>
+      <li>Matha EM School, Kaikalur</li>
+    </ul>
+    <h2>Skills & Projects</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>Python (Beginner, NLTK project)</li>
+      <li>Problem Solving</li>
+      <li>
+        Personal Profile Page – A responsive web page built using HTML & CSS to showcase my journey and skills.
+        <a href="https://bgvalli123.github.io/html/profile.html" target="_blank">[Live Demo]</a>
+      </li>
+    </ul>
+    <h2>Experience & Certifications</h2>
+    <ul>
+      <li>Internships: Web Development, Data Analyst</li>
+      <li>Certifications: Trivia Code, and more</li>
+    </ul>
+    <h2>Interests</h2>
+    <ul>
+      <li>Music</li>
+      <li>Solo Travelling</li>
+      <li>Sketching</li>
+      <li>Exploring technology updates</li>
+      <li>Learning problem-solving techniques using AI tools</li>
+    </ul>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:valliburugula@gmail.com">valliburugula@gmail.com</a></p>
+  </div>
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">&#8679;</button>
+  <button id="darkModeToggle" title="Toggle dark mode" style="position:fixed;top:32px;right:32px;z-index:100;background:#222;color:#fff;border:none;border-radius:50%;width:44px;height:44px;cursor:pointer;font-size:1.5em;box-shadow:0 2px 8px #0002;transition:background 0.3s;">🌙</button>
+  <script>
+    // Show/hide scroll-to-top button
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.onscroll = function() {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = 'block';
+      } else {
+        scrollBtn.style.display = 'none';
+      }
+    };
+    // Smooth scroll to top
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    // Dark mode toggle logic
+    const darkToggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    // Load preference
+    if (localStorage.getItem('darkMode') === 'enabled') {
+      body.classList.add('dark-mode');
+      darkToggle.textContent = '☀️';
+    }
+    darkToggle.onclick = function() {
+      body.classList.toggle('dark-mode');
+      if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('darkMode', 'enabled');
+        darkToggle.textContent = '☀️';
+      } else {
+        localStorage.setItem('darkMode', 'disabled');
+        darkToggle.textContent = '🌙';
+      }
+    };
+  </script>
+</body>
+</html>
